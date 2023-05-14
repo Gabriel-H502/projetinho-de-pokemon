@@ -1,0 +1,132 @@
+/* Alterar fonte do site */ 
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #b6aca0;
+    color: #171515;
+}
+
+/* Modo Escuro */
+body.modo-escuro{
+    background-color: #212121;
+    color: #f5f5f5;
+}
+.modo-escuro .cartao-pokemon{
+    background-color: #a8a8a8;
+}
+
+/* Cabeçalho */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#titulozinho{
+    margin: 5px;
+    font-size: 30px;
+}
+
+header .logo,
+header .imagem-botao{
+    width: 30px;
+    transition: 0.2 ease-in-out;
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+.cartao-pokemon:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main{
+    padding: 25px;
+}
+
+.listagem-pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.cartao-pokemon{
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    gap: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.cartao-pokemon:hover{
+    background-color: #96d9d6;
+}
+
+.informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.cartao-pokemon .gif{
+    width: 80px;
+    height: 80px;
+}
+
+.tipos{
+    display: flex;
+    gap: 15px;
+}
+
+.tipo{
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.tipo-grama{
+    background-color: #3fff3f;
+}
+
+.tipo-fogo{
+    background-color: rgb(255, 86, 34);
+}
+
+.tipo-agua{
+    background-color: #90beff;
+}
+
+.tipo-veneno{
+    background-color: #358b15;
+}
+
+.tipo-inseto{
+    background-color: lightblue;
+}
+
+.tipo-voador{
+    background-color: rgb(218, 170, 152);
+}
+
+.descricao{
+    max-height: 90px;
+    font-size: 14px;
+    padding-right: 10px;
+}
